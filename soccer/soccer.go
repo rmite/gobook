@@ -10,10 +10,11 @@ import (
 	"errors"
 	"fmt"
 	"os"
-	soc "rmite/gobook/lib/socutil"
-	su "rmite/gobook/lib/strutil"
 	"sort"
 	"strings"
+
+	soc "github.com/rmite/gobook/lib/socutil"
+	su "github.com/rmite/gobook/lib/strutil"
 )
 
 const numGironi int = 2

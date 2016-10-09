@@ -9,7 +9,8 @@ package socutil
 import (
 	"errors"
 	"fmt"
-	su "rmite/gobook/lib/strutil"
+
+	su "github.com/rmite/gobook/lib/strutil"
 )
 
 //Partita rappresenta una partita.
