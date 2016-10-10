@@ -7,7 +7,7 @@
 
 Questo repository contiene il **codice di esempio** descritto nella guida **"Programmare in Linguaggio Go"**.
 
-<p align="center">![Programmare in Linguaggio Go][guide-cover]</p>
+<p align="center"><img src="go-guide-cover.jpg" /></p>
 
 La guida **"Programmare in Linguaggio Go"** è disponibile su [Amazon][guide-amazon] e [GooglePlay][guide-goplay].
 
