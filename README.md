@@ -9,7 +9,7 @@ Questo repository contiene il **codice di esempio** descritto nella guida **"Pro
 
 <p align="center"><img src="go-guide-cover.jpg" /></p>
 
-La guida **"Programmare in Linguaggio Go"** è disponibile su [Amazon][guide-amazon] e [GooglePlay][guide-goplay].
+La guida **"Programmare in Linguaggio Go"** è disponibile su [Amazon][guide-amazon], [GooglePlay][guide-goplay]. e [Kobo][guide-kobo].
 
 La guida è pensata per tutti coloro che vogliono apprendere questo nuovo linguaggio di programmazione, siano aspiranti programmatori o programmatori esperti. Descrive **le specifiche e le peculiarità di Go** in modo graduale, in un percorso che va dai valori ai packages, passando per array, slice, map, puntatori, goroutines e canali.
 
@@ -51,6 +51,7 @@ Vedi anche [License][license] e [Contributing][contribute].
 [guide-cover]: go-guide-cover.jpg
 [guide-amazon]: https://www.amazon.it/dp/B01M2URIVX
 [guide-goplay]: https://play.google.com/store/books/details/Renato_Mite_Programmare_in_Linguaggio_Go?id=4Ag6DQAAQBAJ
+[guide-kobo]: https://store.kobobooks.com/it-it/ebook/programmare-in-linguaggio-go
 [code-program]: soccer/soccer.go
 [code-strutil]: lib/strutil/strutil.go
 [code-socutil]: lib/socutil/partita.go
