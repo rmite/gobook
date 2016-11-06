@@ -9,9 +9,9 @@ Questo repository contiene il **codice di esempio** descritto nella guida **"Pro
 
 <p align="center"><img src="go-guide-cover.jpg" /></p>
 
-La guida **"Programmare in Linguaggio Go"** è disponibile su [Amazon][guide-amazon], [GooglePlay][guide-goplay]. e [Kobo][guide-kobo].
+La guida **"Programmare in Linguaggio Go"** è disponibile su [Amazon][guide-amazon], [GooglePlay][guide-goplay] e [Kobo][guide-kobo].
 
-La guida è pensata per tutti coloro che vogliono apprendere questo nuovo linguaggio di programmazione, siano aspiranti programmatori o programmatori esperti. Descrive **le specifiche e le peculiarità di Go** in modo graduale, in un percorso che va dai valori ai packages, passando per array, slice, map, puntatori, goroutines e canali.
+Go è un linguaggio dai notevoli [punti di forza][go-strengths] e la guida è pensata per tutti coloro che vogliono apprendere questo nuovo linguaggio di programmazione, siano aspiranti programmatori o programmatori esperti. Descrive **le specifiche e le peculiarità di Go** in modo graduale, in un percorso che va dai valori ai packages, passando per array, slice, map, puntatori, goroutines e canali.
 
 Il capitolo **"Go all'opera"** accompagna il lettore nella scrittura del programma [soccer][code-program] e delle librerie [strutil][code-strutil] e [socutil][code-socutil] contenuti in questo repository. Questi file di codice mostrano come avvalersi delle **librerie standard Go** per conoscere gli argomenti della linea di comando, acquisire l'input dalla console, convalidare i dati, leggere e scrivere stringhe su flussi e files, verificare se un file esiste, e ancora come definire strutture con relativi metodi e come implementare i metodi delle interfacce standard per la rappresentazione testuale nella console e per l'ordinamento degli slice con criteri personali.
 Il programma _soccer_ non è un semplice "Hello World!", è un programma più articolato le cui istruzioni, insieme alle due librerie, sono spiegate nella guida passo passo, approfondendo allo stesso tempo i temi della progettazione e dell'ottimizzazione del codice.
@@ -59,3 +59,4 @@ Vedi anche [License][license] e [Contributing][contribute].
 [test-file]: lib/podio/podio_test.go
 [license]: LICENSE.md
 [contribute]: CONTRIBUTING.md
+[go-strengths]: https://medium.com/@renato.mite/punti-di-forza-del-linguaggio-go-2905d698740e
