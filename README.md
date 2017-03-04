@@ -9,7 +9,7 @@ Questo repository contiene il **codice di esempio** descritto nella guida **"Pro
 
 <p align="center"><img src="go-guide-cover.jpg" /></p>
 
-La guida **"Programmare in Linguaggio Go"** è disponibile su [Amazon][guide-amazon], [GooglePlay][guide-goplay] e [Kobo][guide-kobo].
+La guida **"Programmare in Linguaggio Go"** è disponibile in ebook su [Amazon][guide-amazon], [GooglePlay][guide-goplay] e [Kobo][guide-kobo], in libro cartaceo su [Amazon][guide-amazon].
 
 Go è un linguaggio dai notevoli [punti di forza][go-strengths] e la guida è pensata per tutti coloro che vogliono apprendere questo nuovo linguaggio di programmazione, siano aspiranti programmatori o programmatori esperti. Descrive **le specifiche e le peculiarità di Go** in modo graduale, in un percorso che va dai valori ai packages, passando per array, slice, map, puntatori, goroutines e canali.
 
