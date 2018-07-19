@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2018 Renato Mite. Tutti i diritti riservati. All rights reserved. -->
+<html>
+<head>
+<title>RicordaLista</title>
+<link rel="stylesheet" href="/files/stili.css">
+<script src="/files/apilib.js"></script>
+</head>
+<body>
+<img src="/img/titolo.png" alt="RicordaLista"/>
+{{$fl := filtro}}
+<p>
+	Note: {{if $fl.Tutte}}<b>Tutte {{.Totale 0}}</b>{{else}}<a href="/note/tutte">Tutte</a> {{.Totale 0}}{{end}}
+	 - {{if $fl.Fatte}}<b>Fatte {{.Totale 2}}</b>{{else}}<a href="/note/fatte">Fatte</a> {{.Totale 2}}{{end}}
+	 - {{if $fl.DaFare}}<b>Da Fare {{.Totale 1}}</b>{{else}}<a href="/note/dafare">Da Fare</a> {{.Totale 1}}{{end}}
+	 | <a href="/chiudi">Chiudi</a>
+</p>
+<hr>
+{{if $m := msg}}<p id="guiMsg"><b>{{$m}}</b></p><hr>{{end}}
+<form action="/inserisci" method="POST">
+<p><input name="nota" type="text" size="50">&nbsp;<input type="submit" value="Aggiungi"></p>
+</form>
+{{range $nt := .Elenco $fl}}
+<p class="nota">
+	<a href="/avviso/rimuovi?id={{$nt.GetID}}"><img class="icon" alt="Elimina" title="Elimina" src="/img/elimina.png"></a>&nbsp;
+	<a href="/modifica?id={{$nt.GetID}}"><img class="icon" alt="Modifica" title="Modifica" src="/img/modifica.png"></a>&nbsp;
+	{{if $nt.Fatto}}
+	<a href="/cambia?id={{$nt.GetID}}&fatto=false" onclick="cambiaStatoNota(this); return false;"><img class="icon" alt="Cambia in Non Fatto" title="Cambia in Non Fatto" src="/img/fatto.png"></a>
+	{{else}}
+	<a href="/cambia?id={{$nt.GetID}}&fatto=true" onclick="cambiaStatoNota(this); return false;"><img class="icon" alt="Cambia in Fatto" title="Cambia in Fatto" src="/img/non-fatto.png"></a>
+	{{end}}
+	&nbsp;<a href="javascript:void(0)" onclick="mostraInfoNota({{$nt.GetID}});"><img class="icon" alt="Informazioni" title="Informazioni" src="/img/info.png"></a>
+	&nbsp;<a href="javascript:void(0)" onclick="cambiaTestoNota(this, {{$nt.GetID}}, {{$nt.Fatto}});">{{.}}</a>
+</p>
+{{else}}
+<p>Nessuna</p>
+{{end}}
+</body>
+</html>

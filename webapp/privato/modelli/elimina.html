@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2018 Renato Mite. Tutti i diritti riservati. All rights reserved. -->
+<html>
+<head>
+<title>RicordaLista</title>
+<link rel="stylesheet" href="/files/stili.css">
+</head>
+<body>
+<img src="/img/titolo.png" alt="RicordaLista"/>
+<p>Elimina Nota | <a href="/">Annulla</a></p>
+<hr>
+<p>
+	Sicuro di voler eliminare la nota?<br/><br/>
+	{{if .Fatto}}
+	<img class="icon" alt="Fatto" title="Fatto" src="/img/fatto.png">
+	{{else}}
+	<img class="icon" alt="Non Fatto" title="Non Fatto" src="/img/non-fatto.png">
+	{{end}}
+	&nbsp;{{.}}<br/><br/>
+	<a href="/conferma/rimuovi?id={{.GetID}}">Elimina</a>
+</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* Copyright (c) 2018 Renato Mite. Tutti i diritti riservati. All rights reserved. */
+
+body {
+	padding: 1em;
+	font-family: Helvetica, sans-serif;
+	font-size: 12pt;
+}
+
+a {text-decoration: none; font-weight: bold;}
+a:link {color: #000080;}
+a:visited {color: #000080;}
+a:hover {color: #000080;text-decoration: underline;}
+a:active {color: #000080;}
+
+img.icon {
+	vertical-align: middle;
+}
+
+p.nota {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #AAAAAA;
+}

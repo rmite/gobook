@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2018 Renato Mite. Tutti i diritti riservati. All rights reserved. -->
+<html>
+<head>
+<title>RicordaLista</title>
+<link rel="stylesheet" href="/files/stili.css">
+</head>
+<body>
+<img src="/img/titolo.png" alt="RicordaLista"/>
+<p>Modifica Nota | <a href="/">Annulla</a></p>
+<hr>
+{{if $m := msg}}<p><b>{{$m}}</b></p><hr>{{end}}
+<form action="/aggiorna" method="POST">
+<p>
+	<label><input name="fatto" type="checkbox" {{if .Fatto}} checked="checked" {{end}} value="true">Fatto</label>&nbsp;
+	<input name="nota" type="text" size="50" value="{{.}}"><br/><br/>
+	<input name="id" type="hidden" value="{{.GetID}}">
+	<input type="submit" value="Modifica">
+</p>
+</form>
+</body>
+</html>
